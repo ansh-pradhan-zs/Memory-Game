@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <span class="game-title">Memory Game</span>
+      <div class="game-grid-container"></div>
+
+      <!-- <div class="game-grid">
+        <div class="flip-card-inner">
+          <div class="front"></div>
+          <div class="back"></div>
+        </div>
+      </div> -->
+
+      <div class="info-panel">
+        <div class="info-container">
+          <span class="moves">Moves:</span>
+          <span id="moves"></span>
+        </div>
+        <div class="info-container">
+          <span class="moves">Matches:</span>
+          <span id="matches"></span>
+        </div>
+        <div class="info-container">
+          <span class="moves">Misses:</span>
+          <span id="misses"></span>
+        </div>
+        <div class="reset-div">
+          <span class="reset-text">Reset</span>
+          <img src="./assets/reset.png" alt="reset-button" class="reset-btn" />
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="result">
+          <span class="result-title">Hurray! You Matched All The Cards</span>
+          <div class="accuracy-div">
+            <span class="accuracy-span">Accuracy</span>
+            <div class="accuracy-bar">
+              <div id="accuracy-val" class="accuracy-val"></div>
+              <div class="accuracy-default-bar"></div>
+              <span class="accuracy-span-val">65%</span>
+            </div>
+            <span class="accuracy-span"> Other Stats</span>
+            <div class="misc-stats">
+              <div class="stats">
+                <span>Moves</span>
+                <span id="moves-val"></span>
+              </div>
+              <div class="stats">
+                <span>Matches</span>
+                <span id="matches-val"></span>
+              </div>
+              <div class="stats">
+                <span>Misses</span>
+                <span id="misses-val"></span>
+              </div>
+            </div>
+          </div>
+          <button class="replay-button">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
