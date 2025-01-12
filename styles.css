@@ -8,6 +8,12 @@ body {
   position: relative;
 }
 
+.author {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 .game-container {
   display: flex;
   flex-direction: column;
